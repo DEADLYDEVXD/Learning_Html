@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Examples</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        table.outset {border-style: outset black;}
+        table{
+            border-collapse: collapse;
+            margin: 40px auto;
+            font-size: 40px ;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            text-align: center;
+            border-style:8px outset black;
+
+
+        }
+        td.inset {border-style: inset gray;}     
+        
+        td{
+            border-style:4px inset gray;
+            width: 120px;
+            height: 120px;
+            
+
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr> <th class=inset>1</th> <th class=inset>2</th> <th>3</th></tr>
+        <tr> <td rowspan="2">4</td> <td>5</td> <td>6</td></tr>
+        <tr> <td>7</td> <td>8</td> </tr>
+        <tr> <td>9</td> <td colspan="2">10</td> </tr>
+
+    </table>
+</body>
+</html>
